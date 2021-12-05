@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 
-/*TYPOGRAPHY*/
+/*#region TYPOGRAPHY*/
 
 html {
   /*62.5% of 16px(default browsers font)=10px
@@ -66,7 +66,8 @@ p {
     font-size: 2.4rem;
   }
 }
-/*LINKS*/
+/*#endregion*/
+/*#region LINKS*/
 a {
   text-decoration: none;
 }
@@ -89,7 +90,8 @@ a {
     font-size: 1.5rem;
   }
 }
-/*BADGES*/
+/*#endregion*/
+/*#region BADGES*/
 
 .badge {
   border-radius: 20px;
@@ -120,8 +122,8 @@ a {
     font-size: 1.2rem;
   }
 }
-
-/*LISTS*/
+/*#endregion*/
+/*#region LISTS*/
 
 .list {
   list-style: none;
@@ -149,7 +151,8 @@ a {
     padding-left: 0;
   }
 }
-/*ICONS*/
+/*#endregion*/
+/*#region ICONS*/
 
 .icon {
   width: 40px;
@@ -182,8 +185,8 @@ a {
 .icon--primary--accent {
   background: var(--color-accent);
 }
-
-/*BUTTONs*/
+/*#endregion*/
+/*#region BUTTONs*/
 
 .btn {
   border-radius: 40px;
@@ -224,6 +227,11 @@ a {
   background: #ec3000;
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .btn--block {
   width: 100%;
   display: inline-block;
@@ -245,8 +253,8 @@ a {
     font-size: 1.5rem;
   }
 }
-
-/*INPUTS*/
+/*#endregion*/
+/*#region INPUTS*/
 
 .input {
   border-radius: var(--border-radius);
@@ -281,8 +289,8 @@ a {
     font-size: 1.5rem;
   }
 }
-
-/*CARD*/
+/*#endregion*/
+/*#region CARD*/
 
 .card {
   border-radius: 7px;
@@ -306,7 +314,8 @@ a {
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
-/*PLANS*/
+/*#endregion*/
+/*#region PLANS*/
 .plan__name {
   color: #fff;
   margin: 0;
@@ -361,7 +370,8 @@ a {
     font-size: 1.7rem;
   }
 }
-/*MEDIA*/
+/*#endregion*/
+/*#region MEDIA*/
 
 .media {
   display: flex;
@@ -378,8 +388,8 @@ a {
 .media__image {
   margin-top: 1rem;
 }
-
-/*QUOTES*/
+/*#endregion*/
+/*#region QUOTES*/
 
 .quote {
   font-size: 3rem;
@@ -428,8 +438,8 @@ a {
     font-size: 1.6rem;
   }
 }
-
-/*GRIDS*/
+/*#endregion*/
+/*#region GRIDS*/
 
 .grid {
   display: grid;
@@ -446,8 +456,8 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/*TESTIMONIALS*/
+/*#endregion*/
+/*#region TESTIMONIALS*/
 
 .testimonial {
   padding: 3rem;
@@ -477,3 +487,45 @@ a {
     margin-left: 6rem;
   }
 }
+/*#endregion*/
+/*#region CALLOUTS*/
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .btn {
+    justify-self: start;
+    margin: 0 2rem;
+  }
+}
+/*#endregion*/
