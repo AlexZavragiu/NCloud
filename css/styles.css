@@ -547,7 +547,7 @@ a {
 .callout__heading {
   color: #fff;
   margin-top: 0;
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 
 .callout .btn {
@@ -557,6 +557,15 @@ a {
 
 .callout__content {
   text-align: center;
+}
+
+.callout__content > p {
+  font-size: 2rem;
+}
+
+.callout .btn--stretched {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .callout-signup {
